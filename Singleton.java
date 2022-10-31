@@ -30,6 +30,9 @@ public static void main(String[] args) {
 	
 			sn=setmyname("Noor Olayan");
 			System.out.println(sn.getmyname());
+			sn=setmyname("Itaf Alayouti");
+			System.out.println(sn.getmyname());
+
 
 	}
 
