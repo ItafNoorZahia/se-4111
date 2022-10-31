@@ -32,6 +32,8 @@ public static void main(String[] args) {
 			System.out.println(sn.getmyname());
 			sn=setmyname("Itaf Alayouti");
 			System.out.println(sn.getmyname());
+			sn=setmyname("zahia ashraf");
+			System.out.println(sn.getmyname());
 
 
 	}
