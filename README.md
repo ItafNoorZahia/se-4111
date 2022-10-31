@@ -1,1 +1,2 @@
 # se-4111
+In this project we focused on applying the singleton class and show how it solves the problem of creating only one object of one class and that object can be used wherever required. Singleton is a creational pattern. This pattern ensures that there is only one instance of a class and provides a global access point for this object. The Singleton Pattern is used to guarantee that there will be only one instance of object in the application. The implementation of this pattern can be useful while creating Connection Pool, Factory, Configuration Manager, etc.
