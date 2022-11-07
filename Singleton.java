@@ -5,7 +5,7 @@ public class Singleton {
 private static Singleton uniqueInstance;
 // other useful instance variable here
 private Singleton() {
-	System.out.println("Noor Abdulrahman Olayan");
+	System.out.println("Itaf Ashraf Alayouti");
 } 
 		  
 		 
