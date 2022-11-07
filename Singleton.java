@@ -20,6 +20,6 @@ public class Singleton {
 			return MyName;
 		}
 		public void setMyName(String MyName) {
-			this.MyName=MyName;
+			this.MyName= MyName;
 		}
 }
