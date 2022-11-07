@@ -7,7 +7,7 @@ public class Singleton {
 	 // other useful instance variable here
 	  
 	  private Singleton() {} 
-	  private String MNamee; 
+	  private String MyNamee; 
 
 
 	 public static Singleton getInstance() {
