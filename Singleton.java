@@ -7,6 +7,8 @@ private static Singleton uniqueInstance;
 private Singleton() {
 	System.out.println("Itaf Ashraf Alayouti");
 	System.out.println("Noor Abdulrahman Olayan");
+	System.out.println("zahia ashraf attili");
+	
 } 
 		  
 		 
