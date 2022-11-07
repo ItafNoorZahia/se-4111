@@ -6,7 +6,7 @@ public class clints {
 public static void main(String[] args) {
 	
 	Singleton sn = Singleton.getInstance();
-	 sn.setMyName("Itaf Alayouti");
+	 sn.setMyName("Itaf Ashraf Alayouti");
     System.out.println(sn.getMyname());
     sn.setMyName("Noor Olayan");
     System.out.println(sn.getMyname());
