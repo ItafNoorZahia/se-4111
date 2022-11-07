@@ -11,7 +11,7 @@ public static void main(String[] args) {
     sn.setMyName("Noor Abdulrahman Olayan");
     System.out.println(sn.getMyname());
 
-    sn.setMyName("zahia ashraf");
+    sn.setMyName("zahia ashraf attili");
     System.out.println(sn.getMyname());
 
 }
