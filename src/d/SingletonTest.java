@@ -35,5 +35,16 @@ class SingletonTest {
     void testGetItafConfig() {
 	 fail("Not yet implemented");
 }
+  //NOOR
+	@Test
+	void testSetNoorConfig() {
+		fail("Not yet implemented");
+	}
+
+    @Test
+    void testGetNoorConfig() {
+	 fail("Not yet implemented");
+}
 }
 //ITAF
+//NOOR

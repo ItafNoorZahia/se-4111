@@ -12,7 +12,7 @@ private Singleton() {
 } 
 
 private int ItafConfig;
-		  
+private int NoorConfig;		  
 		 
 public static Singleton getInstance() {
     if(uniqueInstance== null) {
@@ -27,6 +27,7 @@ public static Singleton getInstance() {
  */
 //Itaf
 public void setItafConfig(int I) {
+	 assert I>=0;
 	
 	if(I<7)
 	  System.out.println("The compound is acidic");
@@ -38,12 +39,33 @@ public void setItafConfig(int I) {
 	System.out.println("The compound is natural");	
 	else
     System.out.println("Error entry");	
-	
+	 
 }
  public int getItafConfig() {
 	return this.I;
 }
 //ITAF
+ //NOOR
+ public void setNoorConfig(int N) {
+	 assert N>=0;
+		
+		if(N<7)
+		  System.out.println("The compound is acidic");
+		else
+		if(N>7)
+			System.out.println("The compound is base ");
+		else
+		if(N==7)
+		System.out.println("The compound is natural");	
+		else
+	    System.out.println("Error entry");	
+		
+	}
+	 public int getNoorConfig() {
+		return this.N;
+	}
+	 
+ 
 }
 
 
