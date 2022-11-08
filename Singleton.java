@@ -10,6 +10,8 @@ private Singleton() {
 	System.out.println("zahia ashraf attili");
 	
 } 
+
+private int ItafConfig;
 		  
 		 
 public static Singleton getInstance() {
@@ -18,7 +20,32 @@ public static Singleton getInstance() {
 	}
 	return  uniqueInstance;
 }
+//Itaf
+/*
+ *this function to set pH number  
+ * @param ph number
+ */
+//Itaf
+public void setItafConfig(int I) {
+	
+	if(I<7)
+	  System.out.println("The compound is acidic");
+	else
+	if(I>7)
+		System.out.println("The compound is base ");
+	else
+	if(I==7)
+	System.out.println("The compound is natural");	
+	else
+    System.out.println("Error entry");	
+	
+}
+ public int getItafConfig() {
+	return this.I;
+}
+//ITAF
 }
 
 
+//Itaf
 
