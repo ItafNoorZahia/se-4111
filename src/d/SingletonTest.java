@@ -10,9 +10,10 @@ import org.junit.jupiter.api.Test;
 
 class SingletonTest {
  
-
+    
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		
 	}
 
 	@AfterAll
@@ -21,7 +22,7 @@ class SingletonTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		
+	
 	}
 
 	@AfterEach
