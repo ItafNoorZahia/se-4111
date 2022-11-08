@@ -13,7 +13,7 @@ private Singleton() {
 
 private int ItafConfig;
 private int NoorConfig;		  
-		 
+private int ZahiaConfig;		 
 public static Singleton getInstance() {
     if(uniqueInstance== null) {
 	   uniqueInstance= new Singleton();
@@ -65,7 +65,27 @@ public void setItafConfig(int I) {
 		return this.N;
 	}
 	 
- 
+ //zahia
+	 public void setZahiaConfig(int z) {
+		 assert z>=0;
+			
+			if(z<7)
+			  System.out.println("The compound is acidic");
+			else
+			if(z>7)
+				System.out.println("The compound is base ");
+			else
+			if(z==7)
+			System.out.println("The compound is natural");	
+			else
+		    System.out.println("Error entry");	
+			
+		}
+		 public int getZahiaConfig() {
+			return this.z;
+		}
+		 
+	 
 }
 
 
