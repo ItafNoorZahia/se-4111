@@ -1,4 +1,4 @@
-package Singleton;
+package d;
 
 public class Singleton {
 	
@@ -10,6 +10,7 @@ private Singleton() {
 	System.out.println("zahia ashraf attili");
 	
 } 
+
 
 private int ItafConfig;
 private int NoorConfig;		  
@@ -28,22 +29,29 @@ public static Singleton getInstance() {
  */
 //Itaf
 public void setItafConfig(int I) {
-	 assert I>=0;
-	
-	if((I>=0)&&(I<7))
-	  System.out.println("The compound is acidic");
-	else
-	if((I>7)&&(I<=14))
-		System.out.println("The compound is base ");
-	else
-	if(I==7)
-	System.out.println("The compound is natural");	
-	else
-    System.out.println("Error entry");	
+	 assert I>=0 || I<=14;
 	 
+	if((I>=0)&&(I<7)) {
+	  System.out.println("The compound is acid");
+	}
+	else 
+	if((I>7)&&(I<=14)) {
+		System.out.println("The compound is base ");
+	}
+	
+	else
+	if(I==7) {
+	System.out.println("The compound is natural");	
+	}
+	else
+   System.out.println("Error entry");
+	
+
 }
+
  public int getItafConfig() {
-	return this.I;
+	
+	return this.ItafConfig;
 }
 //ITAF
  //NOOR
@@ -63,7 +71,7 @@ public void setItafConfig(int I) {
 		
 	}
 	 public int getNoorConfig() {
-		return this.N;
+		return 0;
 	}
 	 
  //zahia
@@ -73,7 +81,7 @@ public void setItafConfig(int I) {
 			if((z>=0)&&(z<7))
 			  System.out.println("The compound is acidic");
 			else
-			if(z>7)&&(z<=14))
+			if((z>7)&&(z<=14))
 				System.out.println("The compound is base ");
 			else
 			if(z==7)
@@ -83,7 +91,7 @@ public void setItafConfig(int I) {
 			
 		}
 		 public int getZahiaConfig() {
-			return this.z;
+			return 0;
 		}
 		 
 	 
