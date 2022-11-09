@@ -43,6 +43,8 @@ class SingletonTest {
   //NOOR
 	@Test
 	 public void testSetNoorConfig() {
+		sn.setItafConfig(0);
+		assertEquals(0, sn.getItafConfig());
 	}
 
     @Test
