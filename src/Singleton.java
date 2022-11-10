@@ -25,7 +25,7 @@ public static Singleton getInstance() {
 //Itaf
 /*
  *this function to set pH number  
- * @param ph number
+ * @param ph  int number
  */
 //Itaf
 public void setItafConfig(int I) {
