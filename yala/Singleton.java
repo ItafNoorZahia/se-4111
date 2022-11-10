@@ -79,22 +79,25 @@ public void setItafConfig(int I) {
 	 
  //zahia
 	 public void setZahiaConfig(int z) {
-		 assert z>=0;
-			
-			if((z>=0)&&(z<7))
-			  System.out.println("The compound is acidic");
-			else
-			if((z>7)&&(z<=14))
+		 assert z>=0 || z<=14;
+		 
+			if((z>=0)&&(z<7)) {
+			  System.out.println("The compound is acid");
+			}
+			else 
+			if((z>7)&&(z<=14)) {
 				System.out.println("The compound is base ");
-			else
-			if(z==7)
-			System.out.println("The compound is natural");	
-			else
-		    System.out.println("Error entry");	
+			}
 			
+			else
+			if(z==7) {
+			System.out.println("The compound is natural");	
+			}
+			else
+		   System.out.println("Error entry");
 		}
 		 public int getZahiaConfig() {
-			return 0;
+			return this.ZahiaConfig;
 		}
 		 
 	 

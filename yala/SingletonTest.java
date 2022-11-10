@@ -56,7 +56,8 @@ class SingletonTest {
     //zahia 
     @Test
 	public void testSetZahiaConfig() {
-    	 fail("Not yet implemented");
+    	sn.setZahiaConfig(7);
+		assertEquals(0, sn.getZahiaConfig());
 	}
 
     @Test
