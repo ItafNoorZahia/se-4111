@@ -30,12 +30,14 @@ class SingletonTest {
 	}
 //ITAF
 	@Test
+	//testsetter
 	public void testSetItafConfig()  {
 		sn.setItafConfig(14);
 		assertEquals(0, sn.getItafConfig());
 	}
 
     @Test
+    //testgetter
     public void testGetItafConfig() {
     	
     
@@ -43,24 +45,29 @@ class SingletonTest {
   //ITAF
   //NOOR
 	@Test
+	//testsetter
 	 public void testSetNoorConfig() {
 		sn.setItafConfig(0);
 		assertEquals(0, sn.getItafConfig());
 	}
 
     @Test
+  //testgetter
     public void testGetNoorConfig() {
     	
 }
     //Noor
+    
     //zahia 
     @Test
+  //testsetter
 	public void testSetZahiaConfig() {
     	sn.setZahiaConfig(7);
 		assertEquals(0, sn.getZahiaConfig());
 	}
 
     @Test
+  //testgetter
     public void testGetZahiaConfig() {
     
 }   
