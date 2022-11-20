@@ -21,6 +21,12 @@ public class SettingsView {
 	 private JTextField settingNoorTextfield;
 	 private JButton settingNoorSaveButton;
 	 private JButton settingNoorPrintButton;
+	 
+	 private JLabel settingZahiaLabel;
+	 private JTextField settingZahiaTextfield;
+	 private JButton settingZahiaSaveButton;
+	 private JButton settingZahiaPrintButton;
+	 
 	 public SettingsView() {
 	 
 		  frame = new JFrame("Settings");
@@ -44,6 +50,12 @@ public class SettingsView {
 		  settingNoorTextfield = new JTextField();
 		  settingNoorSaveButton = new JButton("Save setting one");
 		  settingNoorPrintButton = new JButton("Print to Console!");
+		  
+		  settingZahiaLabel = new JLabel("Setting Zahia:");
+		  settingZahiaTextfield = new JTextField();
+		  settingZahiaSaveButton = new JButton("Save setting one");
+		  settingZahiaPrintButton = new JButton("Print to Console!");
+		  
 		  // Add UI element to frame
 		  GroupLayout layout = new GroupLayout(frame.getContentPane());
 		  
@@ -52,18 +64,20 @@ public class SettingsView {
 		  layout.setAutoCreateContainerGaps(true);
 		  
 		  layout.setHorizontalGroup(layout.createSequentialGroup()
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafLabel).addComponent(settingNoorLabel))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafTextfield).addComponent(settingNoorTextfield))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafSaveButton).addComponent(settingNoorSaveButton))
-		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafPrintButton).addComponent(settingNoorPrintButton)));
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafLabel).addComponent(settingNoorLabel).addComponent(settingZahiaLabel))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafTextfield).addComponent(settingNoorTextfield).addComponent(settingZahiaTextfield))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafSaveButton).addComponent(settingNoorSaveButton).addComponent(settingZahiaSaveButton))
+		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafPrintButton).addComponent(settingNoorPrintButton).addComponent(settingZahiaPrintButton)));
 		  
 		  layout.setVerticalGroup(layout.createSequentialGroup()
 		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingItafLabel)
 		    .addComponent(settingItafTextfield).addComponent(settingItafSaveButton).addComponent(settingItafPrintButton))
 		  
 		  .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingNoorLabel)
-				    .addComponent(settingNoorTextfield).addComponent(settingNoorSaveButton).addComponent(settingNoorPrintButton)));
+				    .addComponent(settingNoorTextfield).addComponent(settingNoorSaveButton).addComponent(settingNoorPrintButton))
 		  
+		  .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingZahiaLabel)
+				    .addComponent(settingZahiaTextfield).addComponent(settingZahiaSaveButton).addComponent(settingZahiaPrintButton)));
 		  
 		  
 		  
@@ -154,4 +168,39 @@ public class SettingsView {
 		 public void setPrintButton1(JButton print) {
 		  this.settingNoorPrintButton = print;
 		 } 
+		 public JLabel getSettingThreeLabel() {
+			  return settingZahiaLabel;
+			 } 
+			 
+			 public void setSettingThreeLabel(JLabel settingThreeLabel) {
+			  this.settingZahiaLabel = settingThreeLabel;
+			 } 
+			 
+			 	 
+			 public JTextField getSettingThreeTextfield() {
+			  return settingZahiaTextfield;
+			 } 
+			 
+			 public void setSettingThreeTextfield(JTextField settingThreeTextfield) {
+			  this.settingZahiaTextfield = settingThreeTextfield;
+			 } 
+			 
+			 
+			 
+			 public JButton getSettingThreeSaveButton() {
+			  return settingZahiaSaveButton;
+			 } 
+			 
+			 public void setSettingThreeSaveButton(JButton settingThreeSaveButton) {
+			  this.settingZahiaSaveButton = settingThreeSaveButton;
+			 } 
+			 
+			 	 
+			 public JButton getSettingThreePrintButton() {
+			  return settingZahiaPrintButton;
+			 } 
+			 
+			 public void setPrintButton2(JButton print) {
+			  this.settingZahiaPrintButton = print;
+			 } 
 }

@@ -9,7 +9,7 @@ public class SettingsModel {
 		
 		private int ItafConfig;
 		private int NoorConfig;		  
-
+		private int ZahiaConfig;
 		
 		public static SettingsModel getInstance() {
 			if (uniqueInstance == null) {
@@ -78,5 +78,28 @@ public class SettingsModel {
 			 public int getNoorConfig() {
 				return this.NoorConfig;
 			}
-		 
+			//zahia
+			 public void setZahiaConfig(int z) {
+				 assert z>=0 || z<=14;
+				 
+					if((z>=0)&&(z<7)) {
+					  System.out.println("The compound is acid");
+					}
+					else 
+					if((z>7)&&(z<=14)) {
+						System.out.println("The compound is base ");
+					}
+					
+					else
+					if(z==7) {
+					System.out.println("The compound is natural");	
+					}
+					else
+				 System.out.println("Error entry");
+					ZahiaConfig = z;
+				}
+				 public int getZahiaConfig() {
+					return this.ZahiaConfig;
+				}
+				
 }
