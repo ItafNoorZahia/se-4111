@@ -68,11 +68,11 @@ public class SettingsView {
 		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafTextfield).addComponent(settingNoorTextfield).addComponent(settingZahiaTextfield))
 		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafSaveButton).addComponent(settingNoorSaveButton).addComponent(settingZahiaSaveButton))
 		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(settingItafPrintButton).addComponent(settingNoorPrintButton).addComponent(settingZahiaPrintButton)));
-		  
+		  //ITAF
 		  layout.setVerticalGroup(layout.createSequentialGroup()
 		    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingItafLabel)
 		    .addComponent(settingItafTextfield).addComponent(settingItafSaveButton).addComponent(settingItafPrintButton))
-		  
+		  //ITAF
 		  .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(settingNoorLabel)
 				    .addComponent(settingNoorTextfield).addComponent(settingNoorSaveButton).addComponent(settingNoorPrintButton))
 		  
