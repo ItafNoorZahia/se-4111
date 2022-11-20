@@ -1,2 +1,6 @@
 /Singleton.class
 /SingletonTest.class
+/SettingsComponent.class
+/SettingsController.class
+/SettingsModel.class
+/SettingsView.class

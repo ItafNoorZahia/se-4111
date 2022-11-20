@@ -9,7 +9,10 @@ public class SettingsComponent {
 		  SettingsController c = new SettingsController(m, v);
 		  
 		  c.initController();
+		  
+		
 	 
+		  
 
 	}
 

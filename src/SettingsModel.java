@@ -8,6 +8,8 @@ public class SettingsModel {
 		}
 		
 		private int ItafConfig;
+		private int NoorConfig;		  
+
 		
 		public static SettingsModel getInstance() {
 			if (uniqueInstance == null) {
@@ -43,7 +45,7 @@ public class SettingsModel {
 			}
 			else
 		   System.out.println("Error entry");
-			
+        ItafConfig = I;
 
 		}
 
@@ -52,4 +54,29 @@ public class SettingsModel {
 			return this.ItafConfig;
 		}
 		//ITAF
+		 //NOOR
+		 public void setNoorConfig(int N) {
+			 assert N>=0 || N<=14;
+			 
+				if((N>=0)&&(N<7)) {
+				  System.out.println("The compound is acid");
+				}
+				else 
+				if((N>7)&&(N<=14)) {
+					System.out.println("The compound is base ");
+				}
+				
+				else
+				if(N==7) {
+				System.out.println("The compound is natural");	
+				}
+				else
+			   System.out.println("Error entry");
+				NoorConfig = N;
+				
+			}
+			 public int getNoorConfig() {
+				return this.NoorConfig;
+			}
+		 
 }
